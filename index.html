@@ -1,8 +1,411 @@
 <style>
-  /* Paste all of your CSS here. */
-</style>
+ p {
+  font-family: 'Georgia';
+  font-size: 15px;
+}
 
-<!-- Paste all of your HTML below. -->
+h1{
+  font-family:'Open Sans';
+  font-size: 35px;
+}
+
+h2 {
+  font-family: 'Open Sans';
+}
+
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 5px;
+	width: 100%;
+	margin: 20px auto;
+}
+header {
+	height: 100%;
+	padding: 0 15px;
+}
+#content {
+	width: 30.5%;
+	float: left;
+	padding: 5px 15px;
+}
+
+#content2 {
+	width: 30.5%;
+	float: left;
+	padding: 5px 15px;
+}
+
+#content3 {
+	width: 30.5%;
+  height: 205px;
+	float: left;
+	padding: 5px 15px;
+}
+
+
+#middle {
+	width: 30.5%;
+  height: 188px;
+  /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#middle2 {
+	width: 30.5%;
+  height: 222px;
+  /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#middle3 {
+	width: 30.5%;
+  /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+
+#sidebar {
+	width: 30.5%;
+  height: 188px;
+	padding: 5px 15px;
+	float: left;
+}
+
+#sidebar2 {
+	width: 30.5%;
+  height: 222px;
+	padding: 5px 15px;
+	float: left;
+}
+
+#sidebar3 {
+	width: 30.5%;
+  height: 215px;
+	padding: 0 15px;
+	float: left;
+}
+
+footer {
+	clear: both;
+	padding: 5px 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+  
+  #content2 {
+		width: 41%;
+		padding: 1% 4%;
+	}
+  
+  #content3 {
+		width: 41%;
+		padding: 1% 4%;
+	}
+  
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+  
+  #middle2 {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+  
+  #middle3 {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+  
+  #sidebar2 {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+  
+  #sidebar3 {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+  
+  #content2 {
+		width: auto;
+		float: none;
+	}
+  
+  #content3 {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+  #middle2 {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+  
+  #middle3 {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+  
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+  #sidebar2 {
+		width: auto;
+		float: none;
+	}
+  
+  #sidebar3 {
+		width: auto;
+		float: none;
+	}
+  
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+  
+	#sidebar {
+		display: none;
+	}
+  
+
+}
+
+
+#content {
+	background: #f8f8f8;
+}
+
+#content2 {
+	background: #f8f8f8;
+}
+
+#content3 {
+	background: #f8f8f8;
+}
+
+#sidebar {
+	background: #f0efef;
+}
+
+#sidebar2 {
+	background: #f0efef;
+}
+
+#sidebar3 {
+	background: #f0efef;
+}
+
+header, #content, #content2, #content3, #middle, #middle2, #middle3, #sidebar, #sidebar2, #sidebar3 {
+	margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+header, #content, #content2, #content3, #middle, #middle2, #middle3, #sidebar, #sidebar2, #sidebar3 {
+	margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#content, #content2, #content3, #middle, #middle2, #middle3, #sidebar, #sidebar2, #sidebar3, footer {
+	border: solid 1px #ccc;
+}
+
+
+  img {
+  width: 48%;
+  float: left;
+  padding-right: 1%;
+}
+
+.box{
+	width:100%;
+	height:3px;
+  background:#7E338B;
+}
+</style>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,800,600italic,700,700italic,800italic' rel='stylesheet' type='text/css'>
+
+<div id="pagewrap">
+  <h1><center>Food wars</center></h1>
+  <div class="box"></div>
+  <p><center>Cherubs have multiple options when it comes to food off-campus. Some nights they will have to make a tough choice between two similar establishments. Food Wars is the Cherubs’  guide to Evanston when they know what they want, but just can’t decide where. Aspects of each establishment will be dissected and the winner of the most categories takes the round.</center></p>
+  
+  <div class="box"></div>
+  
+	<header>
+    <h1><center>Edzo’s vs. Epic Burger</center></h1>
+    
+    
+     <div>   
+<img src="http://cherubs.medill.northwestern.edu/2016/wp-content/uploads/sites/7/2016/07/image.jpeg">
+
+<img src="http://cherubs.medill.northwestern.edu/2016/wp-content/uploads/sites/7/2016/07/image2.jpeg">
+</div>
+	</header>
+		
+	<section id="content">
+		<h2>Taste</h2>
+		<p>Edzo’s and Epic Burger both offer a wide variety of toppings, and their vegetables are always fresh. The difference is in the burger — while Edzo’s is no slouch, Epic Burger is just slightly juicier.</p>
+<p>Slight Edge: Epic Burger</p>
+	</section>
+	
+	<section id="middle">
+    <h2>Price</h2>
+    <p>Edzo’s prices are lower than Epic’s for burgers, fries and milkshakes.</p>
+<p>Edge: Edzo’s</p>
+   
+	</section>
+ 
+	<aside id="sidebar">
+		<h2>Fries and Shakes</h2>
+		<p>Edzo’s shakes are bigger, but Epic Burger’s shakes are not as clumpy. In fries, however, Edzo’s is the clear winner, with 10 different kinds.</p>
+<p>Edge: Edzo’s</p>
+	</aside>
+	<h2><center>Verdict: 2-1 Edzo’s</center></h2>
+	<footer>
+		<p><center>“I feel that Epic Burger is much more of a generic chain, whereas Edzo’s is a one-off. The community there is really unbeatable. It’s about the atmosphere. It’s about the experience.” - Paige Fishman </center></p>
+<p><center>“I definitely prefer Epic Burger because it’s so farm-fresh and organic. Everything tastes so yummy there. There’s great customer service. The food is delicious.” - Ellie Lieberman</center></p>
+	</footer>
+ 
+</div>
+
+  <div class="box"></div>
+
+<h1><center>Cold Stone Creamery vs. Andy’s Frozen Custard</center></h1>
+
+<div>
+<img src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg">
+
+<img src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg">
+</div>
+
+<section id="content2">
+		<h2>Taste</h2>
+		<p>Andy’s is the type of sweet that gets a little sickening after a while, especially since a “small” at Andy’s is the size of a Solo cup. Cold Stone, meanwhile, has the type of taste that never gets old, with more complete toppings. The knock against Cold Stone is its thick consistency, but that’s not enough to overcome its better overall taste.</p>
+<p>Edge: Cold Stone</p>
+	</section>
+	
+	<section id="middle2">
+		<h2>Variety</h2>
+		<p>Both have shakes and malts. Andy’s has Concrete Mixers as opposed to Cold Stone’s smoothies. Andy’s has more kinds of toppings, but Cold Stone has more flavors.
+</p>
+<p>Edge: Cold Stone</p>
+	</section>
+
+	<aside id="sidebar2">
+		<h2>Price</h2>
+    <p>They are approximately the same. Andy’s has a wider range of prices, but the really good custard at Andy’s costs more than most of the servings at Cold Stone.</p>
+<p>Slight Edge: Cold Stone</p>
+	</aside>
+<h2><center>Verdict: 3-0 Cold Stone </center></h2>
+	
+	<footer>
+		<p><center>“I love Andy’s because not only is it very good, it’s very unique. My favorite thing would be the concretes because they’re a smooth blend of everything you love in one bite." - Rachel Friedman
+      </center></p>
+<p><center>“The flavor choices are better and more varied [at Cold Stone]. And the style of mixing toppings into the ice cream, like brownies and chocolate chips, make it unique and delicious.” - Alexa Silverman</center></p> 
+	</footer>
+  
+</div>
+<p></p>
+<div class="box"></div>
+
+<h1><center>Freshii v. Lyfe Kitchen</center></h1>
+
+<div>
+<img src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg">
+
+<img src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg">
+</div>
+
+<section id="content3">
+		<h2>Menu</h2>
+		<p>Freshii offers more variety on the menu and Lyfe really loads up ingredients in each dish, so some ingredients can seem unnecessary. Also, Freshii’s smoothie selection is more varied and tasty.</p>
+  <p>Edge: Freshii</p>
+	</section>
+	
+	<section id="middle3">
+		<h2>Health Level</h2>
+		<p>If a customer is trying to be healthy, Freshii is a perfect fit. Every burrito has a whole wheat tortilla and brown rice, and every single food item on the menu has a vegetable in it, except for the frozen yogurt. At Lyfe, if a customer wants to stray, it’s possible.</p>
+    <p>Slight Edge: Freshii</p>
+	</section>
+
+	<aside id="sidebar3">
+		<h2>Price</h2>
+    <p>The most expensive bowl at Freshii is $8.99, whereas the least expensive bowl at Lyfe Kitchen is $12. The majority of items on the Freshii menu are under $10, whereas most of Lyfe’s main dishes are more expensive.
+</p>
+<p>Edge: Freshii</p>
+	</aside>
+	<h2><center>Verdict: 3-0 Freshii</center></h2>
+	<footer>
+		<p><center>“Lyfe hones in to people with specific diets. They have different types of menus. With a restaurant like Freshii, you have to siphon through the menu to figure out which thing to order.” - Samantha Meade</center></p>
+<p><center>“I love Freshii. I’m really into the smoothies. It’s a great place.” - Alicia Vargelis</center></p> 
+	</footer>
+  
+</div>
 
 <script>
   // Paste all of your Javascript below.
