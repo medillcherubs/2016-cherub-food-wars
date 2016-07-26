@@ -3,7 +3,7 @@ Food Wars article
 
 https://medillcherubs.github.io/2016-cherub-food-wars/
 
-Paste this into your Wordpress post:
+Paste this into your Wordpress post, under the "Text" tab instead of the "Visual" tab:
 
 ```
 [raw]
